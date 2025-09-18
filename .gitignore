@@ -1,12 +1,29 @@
-# Blender / Python 
+# Blender binaries & autosaves
 *.blend1
 *.blend2
-*.pyc
+*.blend@
+*.blend[0-9]
+*.blend.lock
+
+# Renders & caches (keep these out of git)
+renders/
+render*/
+cache/
+temp/
+*.png
+*.jpg
+*.exr
+*.mp4
+*.webm
+
+# Python/Blender build noise
 __pycache__/
+*.pyc
+*.pyo
+.vscode/
+.idea/
+
+# OS noise
 .DS_Store
 Thumbs.db
-*.blend[0-9]
-*.blend[0-9][0-9]
-03_renders/**
-!03_renders/final/**
-z_cache/**
+desktop.ini
